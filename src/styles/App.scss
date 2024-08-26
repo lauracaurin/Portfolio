@@ -1,1 +1,11 @@
-// @import 'layout/header';
+@import './core/variables.scss';
+@import './core/reset.scss';
+@import './core/mediaqueries.scss';
+@import './core/functions.scss';
+@import './components/aboutMe.scss';
+@import './components/contact.scss';
+@import './components/experience.scss';
+@import './components/footer.scss';
+@import './components/header.scss';
+@import './components/landing.scss';
+@import './components/aboutMe.scss';

@@ -1,4 +1,5 @@
 import '../styles/App.scss';
+import React from "react";
 import Header from './Header';
 import AboutMe from './AboutMe';
 import Experience from './Experience';
@@ -9,7 +10,7 @@ import Contact from './Contact';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
       <AboutMe />
       <Experience />
