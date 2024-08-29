@@ -1,14 +1,31 @@
+import { Link, NavLink } from "react-router-dom";
 
-const Menu = ({ isOpen }) => {
+const Menu = () => {
   return (
-    <nav className={`menu ${isOpen ? "open" : ""}`}>
+
+    <nav>
+      <Link to="/" className="title">Laura Caurín</Link>
       <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <NavLink to="/about">
+            Sobre mi
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/experience">
+            Experiencia
+          </NavLink>
+        </li> <li>
+          <NavLink to="/projects">
+            Proyectos
+          </NavLink>
+        </li> <li>
+          <NavLink to="/contact">
+            Contacto
+          </NavLink>
+        </li>
       </ul>
-    </nav>
+    </nav >
   );
 };
 

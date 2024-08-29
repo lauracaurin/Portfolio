@@ -2,10 +2,17 @@
 @import './core/reset.scss';
 @import './core/mediaqueries.scss';
 @import './core/functions.scss';
-@import './components/aboutMe.scss';
+@import './components/about.scss';
 @import './components/contact.scss';
 @import './components/experience.scss';
 @import './components/footer.scss';
 @import './components/header.scss';
-@import './components/landing.scss';
-@import './components/aboutMe.scss';
+@import './components/home.scss';
+@import './components/menu.scss';
+
+
+.App {
+  background-color: #fefefe;
+  height: 100%;
+  width: 100%;
+}

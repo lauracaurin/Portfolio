@@ -1,0 +1,78 @@
+.active {color: grey;
+  text-decoration: underline;
+
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(49, 49, 49);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+  position: sticky;
+  top: 0;
+}
+nav.title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(49, 49, 49);
+}
+
+/* Pseudo-elemento para el subrayado animado */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(49, 49, 49);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Al hacer hover, el subrayado se expande de izquierda a derecha */
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Mantener el subrayado cuando está activo */
+nav ul li a.active::after {
+  transform: scaleX(1);
+}
+
+nav ul li a.active {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(49, 49, 49);
+}
