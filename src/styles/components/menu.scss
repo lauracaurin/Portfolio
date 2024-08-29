@@ -1,78 +1,128 @@
-.active {color: grey;
-  text-decoration: underline;
-
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(49, 49, 49);
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: beige;
+  background-color: white;
   position: sticky;
   top: 0;
-}
-nav.title {
-  font-size: 1.5rem;
-  margin: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
 
-nav ul {
-  display: flex
-}
+  .title {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    &:hover {
+        color: grey;
+      }
+  }
 
-nav ul li {
-  list-style: none;
-}
+  ul {
+    display: flex;
+    list-style: none;
 
-nav ul li a {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-  border-radius: 0.5rem;
-  position: relative;
-}
+    li {
+      a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem;
+        margin: 0 0.5rem;
+        border-radius: 0.5rem;
+        position: relative;
+        transition: color 0.2s ease;
 
-nav ul li a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(49, 49, 49);
-}
+        &:hover {
+          color: grey;
+          text-decoration: underline;
+          text-underline-offset: 1rem;
+          text-decoration-color: grey;
+        }
 
-/* Pseudo-elemento para el subrayado animado */
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: rgb(49, 49, 49);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease-in-out;
-}
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background-color:grey;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.3s ease-in-out;
 
-/* Al hacer hover, el subrayado se expande de izquierda a derecha */
-nav ul li a:hover::after {
-  transform: scaleX(1);
-}
+          &:hover {
+            transform: scaleX(1);
+            
+          }
+        }
 
-/* Mantener el subrayado cuando está activo */
-nav ul li a.active::after {
-  transform: scaleX(1);
-}
+        &.active {
+          color: grey;
+          text-decoration: underline;
+          text-underline-offset: 1rem;
+          text-decoration-color:grey;
+          transition: all 0.3 ease-in-out;
 
-nav ul li a.active {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(49, 49, 49);
+          &::after {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+
+      li {
+        width: 100%;
+        text-align: center;
+
+        a {
+          margin: 0.2rem 0.5rem;
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    cursor: pointer;
+
+    span {
+      height: 0.4rem;
+      width: 100%;
+      background-color: rgb(157, 128, 128);
+      border-radius: 0.2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    .menu {
+      display: flex;
+    }
+
+    flex-direction: column;
+    align-items: start;
+
+    ul {
+      display: none;
+
+      &.open {
+        display: flex;
+      }
+    }
+  }
 }

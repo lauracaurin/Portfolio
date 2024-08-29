@@ -1,11 +1,24 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Menu = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
 
     <nav>
       <Link to="/" className="title">Laura Caurín</Link>
-      <ul>
+      <div className="menu" onClick={() => {
+        setMenuOpen(!menuOpen);
+        console.log(menuOpen);
+      }}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={menuOpen ? "open" : ""}>
         <li>
           <NavLink to="/about">
             Sobre mi
