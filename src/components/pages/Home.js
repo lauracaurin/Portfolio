@@ -1,6 +1,8 @@
+import { NavLink } from "react-router-dom";
 import profilePic from "../../images/profile-img.png";
 
 const Home = () => {
+
   return (
     <>
       <section className="section">
@@ -21,10 +23,10 @@ const Home = () => {
           <div className="btn__container">
             <button className="btn btn__color--2" onclick="window.open('./assets/resume.pdf')">CV</button>
 
-            <button className="btn btn__color--1" onclick="location.href = '#contact'">
+            <NavLink to="/contact" className="btn btn__color--1">
               Contacto
 
-            </button>
+            </NavLink>
           </div>
         </div>
 

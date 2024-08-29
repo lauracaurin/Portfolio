@@ -5,10 +5,12 @@ const Menu = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
 
     <nav>
-      <Link to="/" className="logo">Laura Caurín</Link>
+      <Link to="/" className="logo" onClick={closeMenu}>Laura Caurín</Link>
       <div className="menu" onClick={() => {
         setMenuOpen(!menuOpen);
         console.log(menuOpen);
@@ -20,20 +22,20 @@ const Menu = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/about">
+          <NavLink to="/about" onClick={closeMenu}>
             Sobre mi
           </NavLink>
         </li>
         <li>
-          <NavLink to="/experience">
+          <NavLink to="/experience" onClick={closeMenu}>
             Experiencia
           </NavLink>
         </li> <li>
-          <NavLink to="/projects">
+          <NavLink to="/projects" onClick={closeMenu}>
             Proyectos
           </NavLink>
         </li> <li>
-          <NavLink to="/contact">
+          <NavLink to="/contact" onClick={closeMenu}>
             Contacto
           </NavLink>
         </li>
