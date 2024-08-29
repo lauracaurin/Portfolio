@@ -8,7 +8,7 @@ const Menu = () => {
   return (
 
     <nav>
-      <Link to="/" className="title">Laura Caurín</Link>
+      <Link to="/" className="logo">Laura Caurín</Link>
       <div className="menu" onClick={() => {
         setMenuOpen(!menuOpen);
         console.log(menuOpen);

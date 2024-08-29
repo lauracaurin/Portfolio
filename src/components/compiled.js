@@ -1,10 +1,8 @@
-/*
 
-import harry from '../images/projectImages/harry.PNG';
+
+import profile from '../images/profile-img.png';
 
 export {
-
+  profile
 }
 
-
-*/
