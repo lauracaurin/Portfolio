@@ -1,17 +1,17 @@
 import { NavLink } from "react-router-dom";
-import profilePic from "../../images/profile-img.png";
 
 const Home = () => {
 
   return (
     <>
-      <section className="section">
-
+      <section className="section" id="home">
+        {/*
         <div class="section__pic--container">
 
           <img src={profilePic} alt="laura Caurin profile section" />
 
         </div>
+        */}
 
 
         <div className="section__text">
