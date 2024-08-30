@@ -6,7 +6,6 @@
 @import './components/contact.scss';
 @import './components/experience.scss';
 @import './components/footer.scss';
-@import './components/header.scss';
 @import './components/home.scss';
 @import './components/menu.scss';
 
@@ -23,14 +22,5 @@ main {
    
       display: block;
     
-    /*
-  flex: 1;
-    overflow-y: auto;
-    padding: 1rem;
-    /*height: calc(100vh - 54.4px); // Calcula el espacio restante después del menú fijo
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    */
+ 
 }

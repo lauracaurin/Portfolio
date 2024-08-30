@@ -1,33 +1,20 @@
-import { NavLink } from "react-router-dom";
+
 
 const Home = () => {
 
   return (
     <>
-      <section className="section" id="home">
-        {/*
-        <div class="section__pic--container">
+      <section className="section section__home" id="home">
+        <h1 className="section__home--title">LAURA CAURÍN</h1>
 
-          <img src={profilePic} alt="laura Caurin profile section" />
+        <p className="section__home--description ">Desarrolladora Frontend</p>
 
-        </div>
-        */}
+        <div className="btn__container">
+          <button className="btn btn__color--2" onclick="window.open('./assets/resume.pdf')">CV</button>
+
+          <a href="#contact" className="btn btn__color--1">Contacto</a>
 
 
-        <div className="section__text">
-
-          <h1 className="section__text--title">Laura Caurín</h1>
-
-          <p className="section__text--p1 ">Desarrolladora Frontend</p>
-
-          <div className="btn__container">
-            <button className="btn btn__color--2" onclick="window.open('./assets/resume.pdf')">CV</button>
-
-            <NavLink to="/contact" className="btn btn__color--1">
-              Contacto
-
-            </NavLink>
-          </div>
         </div>
 
       </section>

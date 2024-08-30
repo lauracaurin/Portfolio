@@ -9,7 +9,6 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 
 
-// Ej img: import logoMenu from '../images/ico-menu.svg';
 
 function App() {
   return (
