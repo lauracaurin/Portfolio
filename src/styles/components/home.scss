@@ -24,6 +24,20 @@
       font-size: 1.8rem;
     }
   }
+  &__h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+      margin-bottom: 1rem;
+      color: rgb(0, 0, 0);
+    
+      @include tablet {
+        font-size: 2rem;
+      }
+    
+      @include desktop {
+        font-size: 2.5rem;
+      }
+  }
 }
 
 .section__home {
