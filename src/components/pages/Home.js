@@ -10,7 +10,7 @@ const Home = () => {
         <p className="section__home--description ">Desarrolladora Frontend</p>
 
         <div className="btn__container">
-          <button className="btn btn__color--2" onclick="window.open('./assets/resume.pdf')">CV</button>
+          <button className="btn btn__color--2">CV</button>
 
           <a href="#contact" className="btn btn__color--1">Contacto</a>
 
