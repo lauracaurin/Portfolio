@@ -37,7 +37,6 @@ const Menu = () => {
       >
         <span></span>
         <span></span>
-        <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""} ref={menuRef}>
         <li>
