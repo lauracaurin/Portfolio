@@ -5,12 +5,29 @@ import Experience from './components/pages/Experience';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Home from './components/pages/Home';
-
+import { cocktail } from './components/compiled'
 import About from './components/pages/About';
 
 
 
 function App() {
+
+
+  const projectsData = [
+    {
+      img: cocktail,
+      title: 'Friends Quotes',
+      repo: 'https://github.com/lauracaurin/Cocktail-finder',
+      demo: 'https://github.com/lauracaurin/Cocktail-finder',
+    },
+    {
+      img: 'ruta/a/la/imagen2.jpg',
+      title: 'Project 2',
+      repo: 'https://github.com/lauracaurin/otro-repo',
+      demo: 'https://github.com/lauracaurin/otro-demo',
+    },
+    // Añade más proyectos aquí
+  ];
   return (
 
 
@@ -20,7 +37,7 @@ function App() {
         <Home />
         <About />
         <Experience />
-        <Projects />
+        <Projects projectsData={projectsData} />
         <Contact />
       </main>
     </div>
