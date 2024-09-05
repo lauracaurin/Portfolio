@@ -9,9 +9,7 @@ const AboutMe = () => {
       </div>
       <div className="section__text--container">
         <h2 className="section__h2">Sobre mi</h2>
-        <p className="section__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis eligendi dolorem recusandae aut ad
-          placeat officiis, nam eaque vero est non neque rem, libero, at eos accusantium! Similique, iusto.
+        <p className="section__text">De bailarina profesional a programadora Frontend. La búsqueda de estabilidad laboral en el mundo de la danza me llevó a explorar el campo de la tecnología, donde descubrí una nueva pasión que une creatividad y desafío, similares a los que experimentaba en el arte. A lo largo de mi carrera profesional, he trabajado simultáneamente como profesora de danza y yoga, roles que han desarrollado mi perseverancia, capacidad de adaptación y habilidades para trabajar en equipos multidisciplinares. Mi empatía, actitud colaborativa y compromiso se han valorado en cada proyecto, y ahora estoy emocionada por seguir aprendiendo y creciendo en esta dinámica industria. En cada nuevo reto, encuentro una oportunidad para aplicar mi experiencia y pasión, enfrentando cada desafío con determinación.
         </p>
       </div>
     </section>

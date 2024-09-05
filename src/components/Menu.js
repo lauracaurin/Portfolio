@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
+
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
@@ -22,7 +23,8 @@ const Menu = () => {
   }, []);
 
   // Maneja el clic en el ícono de la hamburguesa
-  const toggleMenu = () => setMenuOpen((prevState) => !prevState);
+  const toggleMenu = () => { setMenuOpen(!menuOpen); }
+
 
   // Cierra el menú cuando se hace clic en un enlace
   const closeMenu = () => setMenuOpen(false);
@@ -37,13 +39,17 @@ const Menu = () => {
       >
         <span></span>
         <span></span>
+        <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""} ref={menuRef}>
         <li>
-          <a href="#about" onClick={closeMenu}>Sobre mí</a>
+          <a href="#home" onClick={closeMenu}>Inicio</a>
         </li>
         <li>
-          <a href="#experience" onClick={closeMenu}>Experiencia</a>
+          <a href="#about" onClick={closeMenu}>Sobre mi</a>
+        </li>
+        <li>
+          <a href="#experience" onClick={closeMenu}>Tecnologías</a>
         </li>
         <li>
           <a href="#projects" onClick={closeMenu}>Proyectos</a>

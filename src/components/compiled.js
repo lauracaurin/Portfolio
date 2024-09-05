@@ -10,9 +10,10 @@ import power from '../images/power.png';
 import linkedin from '../images/linkedin.png';
 import email from '../images/email.png';
 import github from '../images/github.png';
+import portfolio from '../images/portfolio.png';
 
 
 export {
-  cocktail, harry, cards, hangman, shop, number, power, friends, linkedin, email, github
+  cocktail, harry, cards, hangman, shop, number, power, friends, linkedin, email, github, portfolio
 }
 

@@ -10,18 +10,31 @@
 @import './components/menu.scss';
 @import './components/projects.scss';
 
+/*
+ font-family: "Michroma",
+ sans-serif;
+ font-family: "Rajdhani",sans-serif;
+font-family: "Poppins",
+     sans-serif;
+             font-family: "Montserrat",
+             sans-serif;
+                            font-family: "Space Mono",
+                            monospace;
+                                                        font-family: "Varela Round",
+                                                        sans-serif;
+
+ */
 
 .App {
-  background-color: #fefefe;
   height: 100%;
   width: 100%;
 }
 
 main {
-  
-      padding: 0;
-   
-      display: block;
+
+  padding: 0;
+  background-color: #fdfbf3;
+  display: block;
     
  
 }

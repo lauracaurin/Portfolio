@@ -3,13 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 90px 3rem 0 3rem;
+    padding: 120px 35px 0 35px;
   @include tablet {
-    padding: 120px 5rem 0 5rem;
+    padding: 140px 5rem 0 5rem;
   }
 }
 
 .experience__container {
+  margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
@@ -37,16 +38,29 @@
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 2.5rem;
+  gap: 20px;
+  justify-content: center;
 }
 
 .experience__item {
+  margin-top: 15px;
   display: flex;
   width: 10rem;
   align-items: center;
   gap: 0.5rem;
 }
+.experience__text {
+  font-family: "Montserrat",
+      sans-serif;
+  font-size: 16px;
+  @include tablet {
+  font-size: 18px;
+  }
+  @include desktop {
+  font-size: 20px;
+  }
+}
+
 
 .icon {
   width: 1.8rem;

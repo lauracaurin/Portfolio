@@ -5,8 +5,8 @@ const Experience = ({ skillsData }) => {
 
     <section className="section section__experience" id="experience">
 
-      <h2 className="section__h2">Experiencia</h2>
-      <h3 className="section__h3">Habilidades técnicas</h3>
+      <h2 className="section__h2">Tecnologías</h2>
+
 
       <div className="experience__container">
         {skillsData.map((section, index) => (
@@ -17,7 +17,7 @@ const Experience = ({ skillsData }) => {
                 <div className="experience__item" key={idx}>
                   <img src={check} alt="Experience icon" className="icon" />
                   <div>
-                    <h3>{skill}</h3>
+                    <p className='experience__text'>{skill}</p>
                   </div>
                 </div>
 

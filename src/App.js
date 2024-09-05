@@ -5,7 +5,7 @@ import Experience from './components/pages/Experience';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Home from './components/pages/Home';
-import { cocktail, harry, cards, hangman, shop, number, power, friends } from './components/compiled'
+import { cocktail, harry, cards, hangman, shop, number, power, friends, portfolio } from './components/compiled'
 import About from './components/pages/About';
 
 
@@ -16,68 +16,73 @@ function App() {
   const projectsData = [
     {
       img: cocktail,
-      title: 'Friends Quotes',
+      title: 'Cocltail Finder',
       repo: 'https://github.com/lauracaurin/Cocktail-finder',
-      demo: 'https://github.com/lauracaurin/Cocktail-finder',
+      demo: 'https://lauracaurin.github.io/Cocktail-finder/',
     },
     {
       img: friends,
-      title: 'Project 2',
-      repo: 'https://github.com/lauracaurin/otro-repo',
-      demo: 'https://github.com/lauracaurin/otro-demo',
+      title: 'Friends Quotes',
+      repo: 'https://github.com/lauracaurin/Friends-quotes',
+      demo: 'https://lauracaurin.github.io/Friends-quotes/',
     },
+
+    {
+      img: portfolio,
+      title: 'Portfolio',
+      repo: 'https://github.com/lauracaurin/Portfolio',
+      demo: 'https://lauracaurin.github.io/Friends-quotes/',
+    },
+
     {
       img: harry,
-      title: 'Project 2',
-      repo: 'https://github.com/lauracaurin/otro-repo',
-      demo: 'https://github.com/lauracaurin/otro-demo',
+      title: 'Harry Potter',
+      repo: 'https://github.com/lauracaurin/Harry-Potter',
+      demo: 'https://lauracaurin.github.io/Harry-Potter/',
     },
     {
       img: cards,
-      title: 'Project 2',
-      repo: 'https://github.com/lauracaurin/otro-repo',
-      demo: 'https://github.com/lauracaurin/otro-demo',
+      title: 'Profile Cards',
+      repo: 'https://github.com/lauracaurin/Awesome-cards-team-proyect',
+      demo: 'https://beta.adalab.es/project-promo-s-module-2-team-4/',
     },
     {
       img: hangman,
-      title: 'Project 2',
-      repo: 'https://github.com/lauracaurin/otro-repo',
-      demo: 'https://github.com/lauracaurin/otro-demo',
+      title: 'Hangman Game',
+      repo: 'https://github.com/lauracaurin/Hangman-game',
+      demo: 'https://lauracaurin.github.io/Hangman-game/',
     },
     {
       img: number,
-      title: 'Project 2',
-      repo: 'https://github.com/lauracaurin/otro-repo',
-      demo: 'https://github.com/lauracaurin/otro-demo',
+      title: 'Guess the number',
+      repo: 'https://github.com/lauracaurin/Guess-the-number',
+      demo: 'https://lauracaurin.github.io/Guess-the-number/',
     },
     {
       img: power,
-      title: 'Project 2',
-      repo: 'https://github.com/lauracaurin/otro-repo',
-      demo: 'https://github.com/lauracaurin/otro-demo',
+      title: 'Power team',
+      repo: 'https://github.com/lauracaurin/Power-team-project',
+      demo: 'https://beta.adalab.es/project-promo-s-module-1-team-2/',
     },
     {
       img: shop,
-      title: 'Project 2',
-      repo: 'https://github.com/lauracaurin/otro-repo',
-      demo: 'https://github.com/lauracaurin/otro-demo',
+      title: 'Shopping',
+      repo: 'https://github.com/lauracaurin/Shopping',
+      demo: 'https://github.com/lauracaurin/Shopping',
     },
 
   ];
 
   const skillsData = [
     {
-      title: "Desarrollo Frontend",
-      skills: ["HTML5", "CSS3", "Sass", "JavaScript", "React", "EJS",]
+      title: "Desarrollo Frontend y Backend",
+      skills: ["HTML5", "CSS3", "Sass", "JavaScript", "React", "EJS", "Node.js", "Express.js", "SQL", "NoSQL", "APIs"]
     },
     {
-      title: "Desarrollo Backend",
-      skills: ["Node JS", "Express JS", "SQL", "PostgreSQL", "Git", "Gulp", "APIs", "SQLite", "MongoDB"]
-    },
-    {
-      title: "Metodologías y otras herramientas",
-      skills: ["Scrum", "Agile", "Git", "Material UI", "GItHub", " VS Code", "Zeplin", "MySql", "Linter"]
+      title: "Herramientas y Metodologías",
+      skills: ["Git", "GitHub", "Gulp", "VS Code", "Zeplin", "MySQL", "PostgreSQL", "SQLite", "MongoDB", "Scrum", "Agile", "Material UI", "Linter"]
     }
+
   ];
 
 
