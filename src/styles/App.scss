@@ -4,37 +4,7 @@
 @import './core/functions.scss';
 @import './components/about.scss';
 @import './components/contact.scss';
-@import './components/experience.scss';
-@import './components/footer.scss';
+@import './components/technologies.scss';
 @import './components/home.scss';
 @import './components/menu.scss';
 @import './components/projects.scss';
-
-/*
- font-family: "Michroma",
- sans-serif;
- font-family: "Rajdhani",sans-serif;
-font-family: "Poppins",
-     sans-serif;
-             font-family: "Montserrat",
-             sans-serif;
-                            font-family: "Space Mono",
-                            monospace;
-                                                        font-family: "Varela Round",
-                                                        sans-serif;
-
- */
-
-.App {
-  height: 100%;
-  width: 100%;
-}
-
-main {
-
-  padding: 0;
-  background-color: #fdfbf3;
-  display: block;
-    
- 
-}

@@ -1,7 +1,7 @@
 import './styles/App.scss';
 import React from "react";
 import Menu from './components/Menu';
-import Experience from './components/pages/Experience';
+import Technologies from './components/pages/Technologies';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Home from './components/pages/Home';
@@ -9,9 +9,7 @@ import { cocktail, harry, cards, hangman, shop, number, power, friends, portfoli
 import About from './components/pages/About';
 
 
-
 function App() {
-
 
   const projectsData = [
     {
@@ -26,14 +24,12 @@ function App() {
       repo: 'https://github.com/lauracaurin/Friends-quotes',
       demo: 'https://lauracaurin.github.io/Friends-quotes/',
     },
-
     {
       img: portfolio,
       title: 'Portfolio',
       repo: 'https://github.com/lauracaurin/Portfolio',
       demo: 'https://lauracaurin.github.io/Friends-quotes/',
     },
-
     {
       img: harry,
       title: 'Harry Potter',
@@ -68,9 +64,8 @@ function App() {
       img: shop,
       title: 'Shopping',
       repo: 'https://github.com/lauracaurin/Shopping',
-      demo: 'https://github.com/lauracaurin/Shopping',
+      demo: 'https://lauracaurin.github.io/Shopping/',
     },
-
   ];
 
   const skillsData = [
@@ -82,46 +77,44 @@ function App() {
       title: "Herramientas y Metodologías",
       skills: ["Git", "GitHub", "Gulp", "VS Code", "Zeplin", "MySQL", "PostgreSQL", "SQLite", "MongoDB", "Scrum", "Agile", "Material UI", "Linter"]
     }
-
   ];
 
+  const contactData = [
+    {
+      iconClass: "fa-regular fa-envelope",
+      link: "mailto:laura.caurin@gmail.com",
+      text: "laura.caurin@gmail.com",
+    },
+    {
+      iconClass: "fa-brands fa-linkedin-in",
+      link: "https://www.linkedin.com/in/laura-caurin/",
+      text: "linkedin.com/in/laura-caurin/",
+    },
+    {
+      iconClass: "fa-brands fa-github-alt",
+      link: "https://github.com/lauracaurin",
+      text: "github.com/lauracaurin",
+    },
+  ];
+  const menuItems = [
+    { text: "Inicio", id: "home" },
+    { text: "Sobre mi", id: "about" },
+    { text: "Tecnologías", id: "technologies" },
+    { text: "Proyectos", id: "projects" },
+    { text: "Contacto", id: "contact" }
+  ];
 
   return (
-
-
-    <div className="App">
-      <Menu />
+    <>
+      <Menu menuItems={menuItems} />
       <main>
         <Home />
         <About />
-        <Experience skillsData={skillsData} />
+        <Technologies skillsData={skillsData} />
         <Projects projectsData={projectsData} />
-        <Contact />
+        <Contact contactData={contactData} />
       </main>
-    </div>
-
-
-
+    </>
   );
 }
 export default App;
-
-/* 
-    <div className="App">
-      <Menu />
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />}></Route>
-
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/experience' element={<Experience />}></Route>
-          <Route path='/projects' element={<Projects />}></Route>
-          <Route path='/contact' element={<Contact />}></Route>
-          
-        </Routes>
-      </main>
-
-
-    </div>
-
-    */

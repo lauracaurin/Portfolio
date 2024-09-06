@@ -1,0 +1,87 @@
+.technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 35px 0 35px;
+
+  @include tablet{
+    padding: 115px 100px 0 100px;
+  }
+  @include desktop {
+    padding: 117px 200px 0 200px;
+  }
+  &__title {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: rgb(56, 56, 56);
+  }
+
+  &__list {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__section {
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    text-align: center;
+    flex: 1 1 calc(100% - 2.5rem);
+
+    @include tablet {
+      flex: 1 1 calc(50% - 2.5rem);
+    }
+
+    @include desktop {
+      flex: 1 1 calc(33.333% - 2.5rem);
+    }
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    padding: 10px 0 20px;
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  &__skill {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 10rem;
+  }
+
+  &__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+}

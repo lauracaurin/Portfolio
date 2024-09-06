@@ -1,22 +1,15 @@
-
 const Home = () => {
 
   return (
-
-    <section className="section section__home" id="home">
-      <h1 className="section__home--title">LAURA CAURÍN</h1>
-
-      <p className="section__home--description ">DESARROLLO FRONTEND</p>
-
-      <div className="btn__container">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn__1">CV</a>
-
-
+    <section class="section home" id="home">
+      <div class="home__content">
+        <h1 class="home__title">LAURA CAURÍN</h1>
       </div>
-
+      <div class="home__description">
+        <p class="text text--subheading">DESARROLLO FRONTEND</p>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--circle">CV</a>
+      </div>
     </section>
-
-
   );
 }
 

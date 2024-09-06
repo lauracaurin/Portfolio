@@ -7,13 +7,10 @@ import cards from '../images/cards.png';
 import friends from '../images/friends.png';
 import number from '../images/number.png';
 import power from '../images/power.png';
-import linkedin from '../images/linkedin.png';
-import email from '../images/email.png';
-import github from '../images/github.png';
 import portfolio from '../images/portfolio.png';
 
 
 export {
-  cocktail, harry, cards, hangman, shop, number, power, friends, linkedin, email, github, portfolio
+  cocktail, harry, cards, hangman, shop, number, power, friends, portfolio
 }
 

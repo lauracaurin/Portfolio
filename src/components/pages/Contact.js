@@ -1,31 +1,20 @@
-import { linkedin, email, github } from '../compiled'
-
-
-const Contact = () => {
+const Contact = ({ contactData }) => {
   return (
-    <section className="section section__contact" id="contact">
-      <h1 className="section__h1">Contacto</h1>
-
-      <div className="section__contact--container">
-
-        <div className="section__contact--info">
-
-          <img src={email} alt="Email icon" className="icon__info" />
-
-          <a href="mailto:laura.caurin@gmail.com">laura.caurin@gmail.com</a>
-        </div>
-
-        <div className="section__contact--info">
-          <img src={linkedin} alt="LinkedIn icon" className=" icon__info" />
-          <a href="https://www.linkedin.com/in/laura-caurin/">linkedin.com/in/laura-caurin/</a>
-        </div>
-        <div className="section__contact--info">
-          <img src={github} alt="Github icon" className=" icon__info" />
-          <a href="https://www.linkedin.com/in/laura-caurin/">github.com/lauracaurin</a>
-        </div>
+    <section className="section contact" id="contact">
+      <h1 className="contact__title">Contacto</h1>
+      <div className="contact__container">
+        {contactData.map((contact, index) => (
+          <div className="contact__info" key={index}>
+            <i className={`contact__icon ${contact.iconClass}`}></i>
+            <a href={contact.link} className="contact__rrss"
+              target="_blank"
+              rel="noreferrer">
+              {contact.text}
+            </a>
+          </div>
+        ))}
       </div>
     </section>
-
   )
 }
 

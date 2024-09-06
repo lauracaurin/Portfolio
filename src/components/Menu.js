@@ -1,33 +1,36 @@
 import { useState, useRef, useEffect } from "react";
 
 
-const Menu = () => {
+const Menu = ({ menuItems }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const burgerRef = useRef(null);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      // Verifica si el clic ocurrió fuera del menú y del ícono de la hamburguesa
-      if (menuRef.current && !menuRef.current.contains(event.target) &&
-        burgerRef.current && !burgerRef.current.contains(event.target)) {
-        setMenuOpen(false);
-      }
-    };
-
-    // Agrega el evento de clic
     document.addEventListener("mousedown", handleClickOutside);
-
-    // Limpia el evento cuando el componente se desmonte
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Maneja el clic en el ícono de la hamburguesa
+  const handleClickOutside = (event) => {
+    if (
+      menuRef.current && !menuRef.current.contains(event.target) &&
+      burgerRef.current && !burgerRef.current.contains(event.target)
+    ) {
+      setMenuOpen(false);
+    }
+  };
+
   const toggleMenu = () => { setMenuOpen(!menuOpen); }
 
-
-  // Cierra el menú cuando se hace clic en un enlace
-  const closeMenu = () => setMenuOpen(false);
+  const renderMenuItems = () => {
+    return menuItems.map((item, index) => (
+      <li key={index}>
+        <a href={`#${item.id}`} onClick={() => setMenuOpen(false)}>
+          {item.text}
+        </a>
+      </li>
+    ));
+  };
 
   return (
     <nav>
@@ -35,28 +38,13 @@ const Menu = () => {
       <div
         className="menu"
         onClick={toggleMenu}
-        ref={burgerRef}
-      >
+        ref={burgerRef}>
         <span></span>
         <span></span>
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""} ref={menuRef}>
-        <li>
-          <a href="#home" onClick={closeMenu}>Inicio</a>
-        </li>
-        <li>
-          <a href="#about" onClick={closeMenu}>Sobre mi</a>
-        </li>
-        <li>
-          <a href="#experience" onClick={closeMenu}>Tecnologías</a>
-        </li>
-        <li>
-          <a href="#projects" onClick={closeMenu}>Proyectos</a>
-        </li>
-        <li>
-          <a href="#contact" onClick={closeMenu}>Contacto</a>
-        </li>
+        {renderMenuItems()}
       </ul>
     </nav>
   );
