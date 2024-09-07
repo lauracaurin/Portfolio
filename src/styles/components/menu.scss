@@ -58,7 +58,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     width: 2rem;
-    height: 1.20rem;
+    height: 1.22rem;
     cursor: pointer;
     background-color: $background;
 
@@ -139,7 +139,6 @@ nav {
 @media (hover: none) {
 
   nav ul li a,
-  nav .menu span,
   nav .logo {
     transition: none;
 
