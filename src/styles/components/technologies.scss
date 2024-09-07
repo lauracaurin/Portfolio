@@ -14,12 +14,12 @@
   &__title {
     font-size: 23px;
     font-weight: 600;
-    margin-bottom: 1rem;
-    color: rgb(56, 56, 56);
+    margin-bottom: 1.7rem;
+    color: $primary;
   }
 
   &__list {
-    margin-top: 25px;
+    
     display: flex;
     flex-wrap: wrap;
     gap: 2.5rem;
@@ -30,7 +30,7 @@
   &__section {
     padding: 1.5rem;
     border-radius: 2rem;
-    border: 0.1rem solid rgb(163, 163, 163);
+    border: 0.1rem solid $secundary;
     text-align: center;
     flex: 1 1 calc(100% - 2.5rem);
 
@@ -47,7 +47,7 @@
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    color: rgb(0, 0, 0);
+    color: $secundary;
     padding: 10px 0 20px;
   }
 
@@ -65,16 +65,19 @@
     align-items: center;
     gap: 0.5rem;
     width: 10rem;
+    
   }
 
   &__icon {
     width: 1.8rem;
     height: 1.8rem;
+    background-color: $primary;
   }
 
   &__text {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
+    color: $secundary;
 
     @include tablet {
       font-size: 18px;

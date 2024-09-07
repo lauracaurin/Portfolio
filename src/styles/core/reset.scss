@@ -5,5 +5,10 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: "Michroma", sans-serif;
-  background-color: #fdfbf3;
+  /*background-color: #fdfbf3; */
+  background-color: $background;
+}
+
+app {
+  background-color: $background;
 }

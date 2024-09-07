@@ -16,8 +16,8 @@
   &__title {
     font-size: 23px;
     font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: rgb(56, 56, 56);
+    margin-bottom: 1.7rem;
+    color: $primary;
   }
 
   &__container {
@@ -30,6 +30,8 @@
 }
 
 .project {
+  border: solid 1px $secundary;
+  border-radius: 2rem;
   padding: 1.5rem;
   text-align: center;
   flex: 1 1 calc(100% - 2.5rem);
@@ -58,7 +60,7 @@
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    color: rgb(0, 0, 0);
+    color: $secundary;
 
     @include tablet {
       font-size: 17px;
