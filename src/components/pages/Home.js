@@ -7,7 +7,7 @@ const Home = () => {
       </div>
       <div class="home__description">
         <p class="text text--subheading">DESARROLLO FRONTEND</p>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--circle">CV</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn--circle">CV</a>
       </div>
     </section>
   );
