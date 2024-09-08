@@ -3,7 +3,7 @@ const Home = () => {
   return (
     <section class="section home" id="home">
       <div class="home__content">
-        <h1 class="home__title">LAURA CAURÍN</h1>
+        <h1 class="home__title">Laura Caurín</h1>
       </div>
       <div class="home__description">
         <p class="text text--subheading">DESARROLLO FRONTEND</p>

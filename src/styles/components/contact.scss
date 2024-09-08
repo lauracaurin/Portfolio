@@ -17,10 +17,10 @@
     align-items: flex-start;
     border-radius: 2rem;
     border: 0.1rem solid rgb(163, 163, 163);
-    background-color: #fdfbf3;
+    background-color: $background;
     margin: 2rem auto;
     padding: 0.5rem;
-    background-color: $background;
+
     @include desktop {
       flex-direction: row;
     }
@@ -35,22 +35,22 @@
   }
 
   &__icon {
-    font-size: 15px;
+    font-size: 17px;
     padding-top: 3px;
 
     @include tablet {
-      font-size: 16px;
+      font-size: 19px;
     }
 
     @include desktop {
-      font-size: 17px;
+      font-size: 19px;
     }
   }
 
   &__rrss {
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    color: black;
+    color: $secundary;
     text-decoration: none;
 
     @include tablet {
@@ -61,8 +61,8 @@
       font-size: 19px;
       transition: all 300ms ease-in-out;
       &:hover {
-          color: $secundary;
-        }
+          color: $hover;
+      }
     }
   }
 }

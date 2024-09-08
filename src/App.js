@@ -28,7 +28,7 @@ function App() {
       img: portfolio,
       title: 'Portfolio',
       repo: 'https://github.com/lauracaurin/Portfolio',
-      demo: 'https://lauracaurin.github.io/Friends-quotes/',
+      demo: 'https://lauracaurin.github.io/Portfolio/',
     },
     {
       img: harry,
