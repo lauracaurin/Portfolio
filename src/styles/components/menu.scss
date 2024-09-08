@@ -7,21 +7,19 @@ nav {
   width: 100%;
   background-color: $background;
   z-index: 1000;
-  padding: 30px 35px;
+  padding: rem(30) rem(35);
 
   .logo {
     font-weight: 200;
-    font-size: 24px;
+    font-size: rem(24);
     text-decoration: none;
     color: $primary;
     background-color: $background;
-
     @include tablet {
-      font-size: 26px;
+      font-size: rem(26);
     }
     @include desktop {
       transition: transform 500s ease-in-out;
-
       &:hover {
         color: $hover;
       }
@@ -35,7 +33,7 @@ nav {
       display: flex;
       flex-direction: column;
       width: 100%;
-      margin-bottom: 0.25rem;
+      margin-bottom: rem(4);
       background-color: $background;
 
       li {
@@ -43,12 +41,11 @@ nav {
         text-align: center;
 
         a {
-          margin: 0.2rem 0.5rem;
+          margin: rem(3.2) rem(5);
           color: $secundary;
         }
       }
     }
-
     @include tablet {
       display: flex;
       flex-direction: row;
@@ -59,38 +56,36 @@ nav {
   .menu {
     display: flex;
     position: absolute;
-    top: 2.45rem;
-    right: 2.2rem;
+    top: rem(39.2);
+    right: rem(35.2);
     flex-direction: column;
     justify-content: space-between;
-    width: 2rem;
-    height: 1.2rem;
+    width: rem(32);
+    height: rem(19.2);
     cursor: pointer;
     background-color: $background;
 
     span {
-      height: 0.11rem;
+      height: rem(1.76);
       width: 100%;
       background-color: $secundary;
-      border-radius: 0.4rem;
+      border-radius: rem(6.4);
     }
-
     @include tablet {
       display: none;
     }
   }
 
   ul li a {
-    font-size: 15px;
+    font-size: rem(15);
     display: block;
     text-decoration: none;
     color: $secundary;
-    padding: 1rem;
+    padding: rem(16);
     position: relative;
-
     @include desktop {
       transition: transform 300ms ease-in-out;
-      font-size: 17px;
+      font-size: rem(17);
       &:hover {
         color: $hover;
         &::after {
@@ -104,7 +99,7 @@ nav {
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 1px;
+        height: rem(1);
         background-color: $hover;
         transform: scaleX(0);
         transform-origin: left;
@@ -120,15 +115,12 @@ nav {
 }
 
 @media (hover: none) {
-
   nav ul li a,
   nav .logo {
     transition: none;
-
     &:hover {
       color: inherit;
       background-color: inherit;
-
       &::after {
         transform: none;
       }

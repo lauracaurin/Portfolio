@@ -10,40 +10,36 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 110px 35px 0 35px;
-
+  padding: rem(110) rem(35) 0 rem(35);
   @include tablet {
     gap: 25px;
     padding: 115px 35px 0 35px;
   }
-
   @include desktop {
     flex-direction: row;
     justify-content: center;
     gap: 80px;
     align-items: center;
-    padding: 117px 100px 0 100px;
+    padding: rem(117) rem(100) 0 rem(100);
   }
 
   &__pic {
     flex-basis: 40%;
-    max-width: 180px;
+    max-width: rem(180);
     overflow: hidden;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
-
+    margin-bottom: rem(32);
     @include tablet {
       flex-basis: 40%;
-      max-width: 200px;
+      max-width: rem(200);
       margin-bottom: 0;
     }
-
     @include desktop {
       flex-basis: 30%;
-      max-width: 250px;
+      max-width: rem(250);
     }
 
     img {
@@ -56,24 +52,21 @@
   &__content {
     flex-basis: 60%;
     text-align: justify;
-
     @include desktop {
       flex-basis: 70%;
     }
   }
 
   &__title {
-    font-size: 23px;
+    font-size: rem(23);
     font-weight: 600;
-    margin-bottom: 1rem;
-    color:$primary;  
-  
+    margin-bottom: rem(16);
+    color:$primary;   
     @include tablet {
-      font-size: 25px;
-    }
-  
+      font-size: rem(25);
+    }  
     @include desktop {
-      font-size: 27px;
+      font-size: rem(27);
     }
   }
 
@@ -81,14 +74,12 @@
     font-family: "Montserrat", sans-serif;
     line-height: 1.8;
     color: $secundary;
-    font-size: 15px;
-  
+    font-size: rem(15);  
     @include tablet {
-      font-size: 17px;
-    }
-  
+      font-size: rem(17);
+    } 
     @include desktop {
-      font-size: 19px;
+      font-size: rem(19);
       line-height: 2;
     }
   }

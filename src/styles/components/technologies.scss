@@ -3,18 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 110px 35px 0 35px;
-
+  padding: rem(110) rem(35) 0 rem(35);
   @include tablet{
-    padding: 115px 100px 0 100px;
+    padding: rem(115) rem(100) 0 rem(100);
   }
   @include desktop {
-    padding: 117px 200px 0 200px;
+    padding: rem(117) rem(200) 0 rem(200);
   }
+
   &__title {
-    font-size: 23px;
+    font-size: rem(23);
     font-weight: 600;
-    margin-bottom: 1.7rem;
+    margin-bottom: rem(28);
     color: $primary;
     text-transform: uppercase;
   }
@@ -23,72 +23,67 @@
     
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: rem(40);
     justify-content: space-around;
     width: 100%;
   }
 
   &__section {
-    padding: 1.5rem;
-    border-radius: 2rem;
-    border: 0.1rem solid $secundary;
+    padding: rem(24);
+    border-radius: rem(32);
+    border: rem(1.5) solid $secundary;
     text-align: center;
     flex: 1 1 calc(100% - 2.5rem);
-
     @include tablet {
       flex: 1 1 calc(50% - 2.5rem);
     }
-
     @include desktop {
       flex: 1 1 calc(33.333% - 2.5rem);
     }
   }
 
   &__subtitle {
-    font-size: 15px;
+    font-size: rem(15);
     font-weight: 600;
     text-transform: uppercase;
     color: $secundary;
-    padding: 10px 0 20px;
+    padding: rem(10) 0 rem(20);
   }
 
   &__skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: rem(20);
     justify-content: center;
     @include tablet {
-justify-content: space-between;
-  padding: 0 50px;
+      justify-content: space-between;
+      padding: 0 rem(50);
     }
   }
 
   &__skill {
-    margin-top: 15px;
+    margin-top: rem(15);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    width: 10rem;
-  
+    gap: rem(8);
+    width: rem(160); 
   }
 
   &__icon {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: rem(28);
+    height: rem(28);
     background-color: $primary;
   }
 
   &__text {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: rem(16);
     color: $secundary;
-
     @include tablet {
-      font-size: 18px;
+      font-size: rem(18);
     }
-
     @include desktop {
-      font-size: 20px;
+      font-size: rem(20);
     }
   }
 }

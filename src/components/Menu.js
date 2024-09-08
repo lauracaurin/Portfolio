@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 
-
 const Menu = ({ menuItems }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);

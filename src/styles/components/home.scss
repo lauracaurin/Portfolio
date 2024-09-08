@@ -5,7 +5,7 @@
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  padding: 0 35px 35px 35px;
+  padding: 0 rem(35) rem(35) rem(35);
 
   &__content {
     display: flex;
@@ -20,15 +20,13 @@
     font-weight: 600;
     text-transform: uppercase;
     color: $primary;
-    font-size: 42px;
-    padding-top: 100px;
-
+    font-size: rem(42);
+    padding-top: rem(100);
     @include tablet {
-      font-size: 62px;
+      font-size: rem(62);
     }
-
     @include desktop {
-      font-size: 80px;
+      font-size: rem(80);
     }
   }
 
@@ -36,68 +34,62 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-
+    gap: rem(15);
     @include tablet {
       flex-direction: row;
       justify-content: center;
-      gap: 15px;
     }
   }
 }
 
 .text {
   &--subheading {
-    font-size: 15px;
+    font-size: rem(15);
     font-weight: 400;
     text-transform: uppercase;
-        color: $secundary;
-
+    color: $secundary;
     @include tablet {
-      font-size: 17px;
+      font-size: rem(17);
     }
-
     @include desktop {
-      font-size: 19px;
+      font-size: rem(19);
     }
   }
 }
 
 .btn { 
-  padding: 0.9rem 1.2rem;
+  padding: rem(14.4) rem(19.2);
   width: 100%;
-  max-width: 16rem;
-  border-radius: 2rem;
+  border-radius: rem(32);
   cursor: pointer;
   text-align: center;
   display: inline-block;
   text-decoration: none;
 
   &--circle {
-    width: 50px;
-    height: 50px;
+    width: rem(50);
+    height: rem(50);
     padding: 0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: rem(13);
     font-weight: 600;
     border: 1px solid $hover;
     background: none;
     color: $secundary;
     transition: all 600ms ease-in-out;
-
     @include tablet {
-      width: 55px;
-      height: 55px;
-      font-size: 15px;
-    }
+      width: rem(55);
+      height: rem(55);
+      font-size: rem(15);
+    }  
     @include desktop {
       &:hover {
-          background: $hover;
-          color: white;
-          border: none;
+        background: $hover;
+        color: white;
+        border: none;
       }
     }
   }

@@ -5,7 +5,7 @@
   flex-direction: column;
 
   &__title {
-    font-size: 23px;
+    font-size: rem(23);
     font-weight: 600;
     text-transform: uppercase;
     color: $primary;
@@ -15,12 +15,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 2rem;
-    border: 0.1rem solid rgb(163, 163, 163);
+    border-radius: rem(16);
+    border: rem(1.5) solid rgb(163, 163, 163);
     background-color: $background;
-    margin: 2rem auto;
-    padding: 0.5rem;
-
+    margin: rem(32) auto;
+    padding: rem(8);
     @include desktop {
       flex-direction: row;
     }
@@ -30,35 +29,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.9rem;
-    padding: 1rem;
+    gap: rem(14.5);
+    padding: rem(16);
   }
 
   &__icon {
-    font-size: 17px;
-    padding-top: 3px;
-
+    font-size: rem(17);
+    padding-top: rem(3);
     @include tablet {
-      font-size: 19px;
-    }
-
-    @include desktop {
-      font-size: 19px;
+      font-size: rem(19);
     }
   }
 
   &__rrss {
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: rem(15);
     color: $secundary;
     text-decoration: none;
-
     @include tablet {
-      font-size: 17px;
+      font-size: rem(17);
     }
-
     @include desktop {
-      font-size: 19px;
+      font-size: rem(19);
       transition: all 300ms ease-in-out;
       &:hover {
           color: $hover;
