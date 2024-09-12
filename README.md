@@ -7,7 +7,7 @@ Bienvenido a mi portfolio en línea. Aquí podrás encontrar más información s
 
 - **React**
 - **SCSS**
-- **JavaScript (ES6)**
+- **JavaScript**
 
 ## Autor
 
