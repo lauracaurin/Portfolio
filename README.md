@@ -1,29 +1,13 @@
-# Portfolio Laura Caurín
+# Portfolio de Laura Caurin 👩‍💻
 
-Aquí podrás encontrar más información sobre mí, mis proyectos, redes sociales y correo electrónico.
+Bienvenido a mi portafolio en línea. Aquí podrás encontrar más información sobre mí, mis proyectos, redes sociales y correo electrónico.
 
 
-## Construido con
+## Tecnologías utilizadas 🛠️
 
-- HTML
-
-- SCSS
-
-- JAVASCRIPT
-
-- BEM structure
-
-- React
-
-**Herramientas**
-
-- VSCODE
-
-- GIT/GITHUB
-
-- GULP
-
-- REACT STARTER KIT
+- **React**
+- **SCSS**
+- **JavaScript (ES6)**
 
 ## Autor
 
