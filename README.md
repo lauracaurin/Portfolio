@@ -5,8 +5,6 @@ Aquí podrás encontrar más información sobre mí, mis proyectos, redes social
 
 ## Construido con
 
-**Construido con 🛠️ **
-
 - HTML
 
 - SCSS
