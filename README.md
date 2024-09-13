@@ -1,4 +1,4 @@
-# Portfolio de Laura Caurin 👩‍💻
+# Portfolio-Laura Caurin 👩‍💻
 
 Bienvenido a mi portfolio en línea. Aquí podrás encontrar más información sobre mí, mis proyectos, redes sociales y correo electrónico.
 
