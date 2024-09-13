@@ -6,7 +6,7 @@ import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import { cocktail, harry, cards, hangman, shop, number, power, friends, portfolio } from './components/compiled'
+import { cocktail, harry, cards, hangman, shop, number, power, friends, portfolio, todos } from './components/compiled'
 
 function App() {
 
@@ -18,11 +18,12 @@ function App() {
       demo: 'https://lauracaurin.github.io/Cocktail-finder/',
     },
     {
-      img: friends,
-      title: 'Friends Quotes',
-      repo: 'https://github.com/lauracaurin/Friends-quotes',
-      demo: 'https://lauracaurin.github.io/Friends-quotes/',
+      img: todos,
+      title: 'To Do List',
+      repo: 'https://github.com/lauracaurin/to-do-list',
+      demo: 'https://lauracaurin.github.io/to-do-list/',
     },
+
     {
       img: portfolio,
       title: 'Portfolio',
@@ -34,6 +35,12 @@ function App() {
       title: 'Harry Potter',
       repo: 'https://github.com/lauracaurin/Harry-Potter',
       demo: 'https://lauracaurin.github.io/Harry-Potter/',
+    },
+    {
+      img: friends,
+      title: 'Friends Quotes',
+      repo: 'https://github.com/lauracaurin/Friends-quotes',
+      demo: 'https://lauracaurin.github.io/Friends-quotes/',
     },
     {
       img: cards,
