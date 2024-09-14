@@ -84,7 +84,7 @@
   text-decoration: none;
   font-size: rem(15);
   text-align: center;
-  border: rem(1.5) solid $secundary;
+  border: solid 1px $secundary;
   background: none;
   color:$secundary; 
   @include tablet {

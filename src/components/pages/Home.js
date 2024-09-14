@@ -6,7 +6,7 @@ const Home = () => {
         <h1 class="home__title">Laura Caurín</h1>
       </div>
       <div class="home__description">
-        <p class="text text--subheading">DESARROLLO FRONTEND</p>
+        <p class="text text--subheading">Front-End Developer</p>
         <a href="resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn--circle">CV</a>
       </div>
     </section>
