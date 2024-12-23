@@ -77,11 +77,11 @@ function App() {
   const skillsData = [
     {
       title: "Desarrollo Frontend y Backend",
-      skills: ["HTML5", "CSS3", "Sass", "JavaScript", "React", "EJS", "Node.js", "Express.js", "SQL", "NoSQL", "APIs"]
+      skills: ["HTML5", "CSS3", "Sass", "JavaScript", "React", "EJS", "Node.js", "Express.js", "SQL", "NoSQL", "APIs", "Next.js", "Firebase"]
     },
     {
       title: "Herramientas y Metodologías",
-      skills: ["Git", "GitHub", "Gulp", "VS Code", "Zeplin", "MySQL", "PostgreSQL", "SQLite", "MongoDB", "Scrum", "Agile", "Material UI", "Linter"]
+      skills: ["Git", "GitHub", "Gulp", "VS Code", "Zeplin", "MySQL", "PostgreSQL", "SQLite", "MongoDB", "Scrum", "Agile", "Material UI", "Linter", "Airtable", "Make", "Figma", "Wordpress"]
     }
   ];
 
