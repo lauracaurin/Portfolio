@@ -93,18 +93,19 @@ nav {
         }
       }
 
-      &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: rem(1);
-        background-color: $hover;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 500ms ease-in-out;
-      }
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   left: 0;
+      //   bottom: 0;
+      //   width: 100%;
+      //   height: rem(1);
+      //   background-color: $hover;
+      //   transform: scaleX(0);
+      //   transform-origin: left;
+      //   transition: transform 500ms ease-in-out;
+      // }
+      
     }
   }
   @include tablet {

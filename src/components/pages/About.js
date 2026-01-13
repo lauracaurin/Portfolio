@@ -1,4 +1,4 @@
-import profilePic from '../../images/profile-img.png';
+import profilePic from "../../images/profile-img.png";
 
 const AboutMe = () => {
   return (
@@ -9,11 +9,21 @@ const AboutMe = () => {
       <div className="about__content">
         <h2 className="about__title">SOBRE MI</h2>
         <p className="about__description">
-          De bailarina profesional a programadora Frontend. La búsqueda de estabilidad laboral en el mundo de la danza me llevó a explorar el campo de la tecnología, donde descubrí una nueva pasión que une creatividad y desafío, similares a los que experimentaba en el arte. A lo largo de mi carrera profesional, he trabajado simultáneamente como profesora de danza y yoga, roles que han desarrollado mi perseverancia, capacidad de adaptación y habilidades para trabajar en equipos multidisciplinares. Mi empatía, actitud colaborativa y compromiso se han valorado en cada proyecto, y ahora estoy emocionada por seguir aprendiendo y creciendo en esta dinámica industria. En cada nuevo reto, encuentro una oportunidad para aplicar mi experiencia y pasión, enfrentando cada desafío con determinación.
+          Soy desarrolladora Frontend con experiencia en React, Next.js y
+          WordPress. Mi trayectoria previa en la danza profesional y la docencia
+          me aportó disciplina, constancia y una gran capacidad de adaptación,
+          habilidades que aplico hoy en cada proyecto de desarrollo web.
+          <br />
+          He participado en proyectos reales colaborando con equipos de diseño y
+          marketing, realizando mantenimiento y personalización de sitios
+          corporativos y desarrollando interfaces responsive. Disfruto trabajar
+          de forma estructurada y organizada, cuidando los procesos y fomentando
+          la colaboración dentro del equipo. Siempre estoy lista para
+          experimentar con nuevas herramientas y proyectos distintos.
         </p>
       </div>
     </section>
   );
-}
+};
 
 export default AboutMe;
